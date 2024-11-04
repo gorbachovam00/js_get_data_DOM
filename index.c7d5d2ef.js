@@ -1,0 +1,2 @@
+function t(t){return t.toString().replace(/\B(?=(\d{3})+(?!\d))/g,",")}var e=document.querySelectorAll(".population"),o=0,n=0;e.forEach(function(t){var e=parseInt(t.textContent.trim().replace(/,/g,""),10);!isNaN(e)&&e>0&&(o+=e,n++)});var r=n>0?o/n:0,a=document.querySelectorAll(".average-population"),c=document.querySelectorAll(".total-population");a.forEach(function(e){e.textContent=t(r.toFixed(0))}),c.forEach(function(e){e.textContent=t(o)});
+//# sourceMappingURL=index.c7d5d2ef.js.map
